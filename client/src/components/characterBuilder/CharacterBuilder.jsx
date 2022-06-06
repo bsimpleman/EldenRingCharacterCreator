@@ -6,9 +6,11 @@ import StatField from '../StatField/StatField'
 
 const CharacterBuilder = () => {
 
-    const [HP, setHP] = useState('10')
-    const [FP, setFP] = useState('10')
-    const [stamina, setStamina] = useState('10')
+    const [HP, setHP] = useState(10)
+    const [FP, setFP] = useState(10)
+    const [stamina, setStamina] = useState(10)
+    const [equipLoad, setEquipLoad] = useState(0)
+    const [discovery, setDiscovery] = useState(0)
 
     const STATS_LIST = ['Vigor', 'Mind', 'Endurance', 'Strength', 'Dexterity', 'Intelligence', 'Faith', 'Arcane']
     const [stats, setStats] = useState({
@@ -19,6 +21,9 @@ const CharacterBuilder = () => {
         setHP(handleCalculations(stats['Vigor'], 'HP (Vigor)'))
         setFP(handleCalculations(stats['Mind'], 'FP (Mind)'))
         setStamina(handleCalculations(stats['Endurance'], 'Stamina (Endurance)'))
+        setEquipLoad(handleCalculations(stats['Endurance'], 'Equip Load (Endurance)'))
+        setDiscovery(100 + stats['Arcane'])
+        console.log(stats)
     }
 
     const incrementStatValue = useCallback((stat) => {
@@ -47,11 +52,20 @@ const CharacterBuilder = () => {
                             {Object.keys(stats).map((key) => <StatField handleIncrement={incrementStatValue} handleDecrement={decrementStatValue} name={key} value={stats[key]}/>)}
                         </div>
                     </div>
-                    <div className="column"></div>
                     <div className="column">
-                        <p>HP: {HP}</p>
-                        <p>FP: {FP}</p>
-                        <p>Stamina: {stamina}</p>
+
+                    </div>
+                    <div className="column">
+                        <div id="base-stat-container">
+                            <p>HP: {HP}</p>
+                            <p>FP: {FP}</p>
+                            <p>Stamina: {stamina}</p>
+                            <p>Equip Load: {equipLoad}</p>
+                            <p>Discovery: {discovery}</p>
+                            <br/>
+                            <p>Physical /</p>
+                            <p>VS Strike /</p>
+                        </div>
                     </div>
                 </div>
             </div>

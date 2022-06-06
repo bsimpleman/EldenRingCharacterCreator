@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import handleCalculations from '../../utils/calculations/stat_calculations'
+import StatButton from '../StatButton/StatButton'
 import './statField.css'
 
 const StatField = (props) => {
@@ -16,15 +17,15 @@ const StatField = (props) => {
         if (props.value !== statValue) {
             setStatValue(props.value);
         }
-    }, [props.value])
+    }, [props.value, statValue])
     
 
     return (
         <div id="stat-field-container">
             <div class="grid-item"><p>{statName}: {statValue}</p></div>
             <div className="grid-item"></div>
-            <div className="grid-item"><p onClick={() => {props.handleIncrement(statName)}}>+</p></div>
-            <div className="grid-item"><p onClick={() => {props.handleDecrement(statName)}}>-</p></div>
+            <StatButton icon={'+'} onClick={() => {props.handleIncrement(statName)}}/>
+            <StatButton icon={'-'} onClick={() => {props.handleDecrement(statName)}}/>
         </div>
     )
 

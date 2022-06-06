@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+#base-stat-container p{
+    font-size: 24px;
+    height: 10px;
+}
+
 .column {
     max-height: 1600px;
     min-height: 800px;
