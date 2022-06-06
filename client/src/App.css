@@ -8,19 +8,18 @@ root, html, body {
     height: 100vh;
 }
 
-img {
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: -999;
-}
-
 .main-container {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+p {
+    top: 10%;
+    left: 10%;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 40px;
 }
