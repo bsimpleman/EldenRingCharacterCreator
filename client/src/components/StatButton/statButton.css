@@ -1,4 +1,25 @@
-span {
-    height: 100px;
-    background-color: tomato;
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+icon-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    background-color: cornflowerblue;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+icon-container span:hover {
+    cursor: pointer;
 }

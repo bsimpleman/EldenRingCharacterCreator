@@ -22,7 +22,7 @@ const StatField = (props) => {
 
     return (
         <div id="stat-field-container">
-            <div class="grid-item"><p>{statName}: {statValue}</p></div>
+            <div class="grid-item">{statName}: <input type="number" min="1" max="99" step="1" name={statName} value={statValue} onChange={(event) => {props.handleChange(statName, event.target.value)}}></input></div>
             <div className="grid-item"></div>
             <StatButton icon={'+'} onClick={() => {props.handleIncrement(statName)}}/>
             <StatButton icon={'-'} onClick={() => {props.handleDecrement(statName)}}/>

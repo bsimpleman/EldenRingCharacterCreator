@@ -12,8 +12,29 @@
 }
 
 .column {
+    margin-top: 50px;
     max-height: 1600px;
     min-height: 800px;
     width: 30%;
     background-color: darkgrey;
+}
+
+.dd {
+    background-color: cornflowerblue;
+    margin: 10000px;
+    margin-top: 50px;
+}
+
+.bottom-column-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-column {
+    display: flex;
+}
+
+.Combobox {
+    margin-top: 10px;
 }

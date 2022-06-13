@@ -51,19 +51,22 @@ const calculateStat = (growMin, growMax, growth) => {
     return growMin + ((growMax - growMin) * growth)
 }
 
-const handleCalculations = (input, stat) => {
-    console.log(stat)
-    console.log(input)
+const handleCalculations = (input, stat, floor = true) => {
     const group = getGroup(stat)
-    const stats_info = getStatMinAndMax(input, group)
-    console.log(stats_info)
+    let stats_info
+    try {
+        stats_info = getStatMinAndMax(input, group)
+    } catch (e) {
+        return 0
+    }
     const ratio = calculateRatio(input, group[STAT_MAX_IDENTIFIERS[stats_info.min]], group[STAT_MAX_IDENTIFIERS[stats_info.max]])
-    console.log("ratio: " + ratio)
     const growth = calculateGrowth(ratio, group[ADJUSTMENT_IDENTIFIERS[stats_info.min]])
-    console.log("growth: " + growth)
     const result = calculateStat(group[GROWTH_IDENTIFIERS[stats_info.min]], group[GROWTH_IDENTIFIERS[stats_info.max]], growth)
-    console.log("result: " + result)
-    return Math.floor(result)
+    if (floor) {
+        return Math.floor(result)
+    } else {
+        return result
+    }
 }
 
 module.exports = handleCalculations

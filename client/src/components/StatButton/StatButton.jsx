@@ -12,7 +12,9 @@ const StatButton = (props) => {
 
     return (
         <>
-        <span onClick={props.onClick}>{icon}</span>
+            <div id="icon-container">
+                <span onClick={props.onClick}>{icon}</span>
+            </div>
         </>
     )
 }

@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Hero",
+    "id": 0,
+    "vigor": 14,
+    "mind": 9,
+    "endurance": 12,
+    "strength": 16,
+    "dexterity": 9,
+    "intelligence": 7,
+    "faith": 8,
+    "arcane": 11
+  },
+  {
+    "Name": "Bandit",
+    "id": 1,
+    "vigor": 10,
+    "mind": 11,
+    "endurance": 10,
+    "strength": 9,
+    "dexterity": 13,
+    "intelligence": 9,
+    "faith": 8,
+    "arcane": 14
+  },
+  {
+    "Name": "Astrologer",
+    "id": 2,
+    "vigor": 9,
+    "mind": 15,
+    "endurance": 9,
+    "strength": 8,
+    "dexterity": 12,
+    "intelligence": 16,
+    "faith": 7,
+    "arcane": 9
+  },
+  {
+    "Name": "Warrior",
+    "id": 3,
+    "vigor": 11,
+    "mind": 12,
+    "endurance": 11,
+    "strength": 10,
+    "dexterity": 16,
+    "intelligence": 10,
+    "faith": 8,
+    "arcane": 9
+  },
+  {
+    "Name": "Prisoner",
+    "id": 4,
+    "vigor": 11,
+    "mind": 12,
+    "endurance": 11,
+    "strength": 11,
+    "dexterity": 14,
+    "intelligence": 14,
+    "faith": 6,
+    "arcane": 9
+  },
+  {
+    "Name": "Confessor",
+    "id": 5,
+    "vigor": 10,
+    "mind": 13,
+    "endurance": 10,
+    "strength": 12,
+    "dexterity": 12,
+    "intelligence": 9,
+    "faith": 14,
+    "arcane": 9
+  },
+  {
+    "Name": "Wretch",
+    "id": 6,
+    "vigor": 10,
+    "mind": 10,
+    "endurance": 10,
+    "strength": 10,
+    "dexterity": 10,
+    "intelligence": 10,
+    "faith": 10,
+    "arcane": 10
+  },
+  {
+    "Name": "Vagabond",
+    "id": 7,
+    "vigor": 15,
+    "mind": 10,
+    "endurance": 11,
+    "strength": 14,
+    "dexterity": 13,
+    "intelligence": 9,
+    "faith": 9,
+    "arcane": 7
+  },
+  {
+    "Name": "Prophet",
+    "id": 8,
+    "vigor": 10,
+    "mind": 14,
+    "endurance": 8,
+    "strength": 11,
+    "dexterity": 10,
+    "intelligence": 7,
+    "faith": 16,
+    "arcane": 10
+  },
+  {
+    "Name": "Samurai",
+    "id": 9,
+    "vigor": 12,
+    "mind": 11,
+    "endurance": 13,
+    "strength": 12,
+    "dexterity": 10,
+    "intelligence": 10,
+    "faith": 8,
+    "arcane": 8
+  }
+]
